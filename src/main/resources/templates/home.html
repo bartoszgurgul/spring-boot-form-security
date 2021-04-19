@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SpringBootSecurity</title>
+</head>
+<body>
+<h1>Hello there</h1>
+<a href="secret">Go to security page</a>
+<form action="logmeout" th:action="@{/logmeout}" method="post" >
+    <input type="submit" value="Log me out" />
+</form>
+</body>
+</html>
